@@ -2,6 +2,7 @@ import pandas as pd
 import time
 import os
 
+os.chdir(os.path.dirname(__file__))
 DATA_DIR = "data"
 
 
