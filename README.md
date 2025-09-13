@@ -1,14 +1,13 @@
 Create a database of all the items of a directory
 
 # Installation
-Clone the repo: `git clone https://github.com/RadoTheProgrammer/tetris`
-Install the dependencies: `pip install -r requirements.txt`
+Install it with pip: `pip install files-db2`
 
 # Usage
 Create the database:
 ```python
-import main
-db = main.FilesDatabase.create(<your src>)
+import files_db
+db = files_db.create(<your src>)
 ```
 It is a table, a subclass of pandas dataframe, the columns are the following:
 * name: name of the item, relative path
@@ -36,7 +35,7 @@ db.only_files() # select only the files
 db.pin_columns("nls") # pin a column(s) when you're more interested into a particular one
 
 db.to_csv(<file>) # Export into a file
-db = main.read_csv(<file>) # Import a database of file
+db = files_db.read_csv(<file>) # Import a database of file
 ```
 
 And then you can save it into a file by `db.to_csv(<file>)` simply like pandas, and use a tool like Data Wrangler or Excel to view and analyse this data freely.
