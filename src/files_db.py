@@ -8,7 +8,6 @@ from tqdm import tqdm
 
 file_path = "/Users/alain/Library/CloudStorage/OneDrive-EducationVaud/coding/projects-data-analysis.csv"
 file_path = "test.py"
-
 # st = os.stat(file_path)
 # print("st_atime",datetime.datetime.fromtimestamp(st.st_atime))
 # print("st_mtime",datetime.datetime.fromtimestamp(st.st_mtime))
@@ -80,7 +79,6 @@ class FilesDatabase(pd.DataFrame):
 
         #self = self[::-1]
         #print(type(self))
-
         def _process(relpath,path,level):
             """
             This is the core function of the whole program, the time the program takes depend on it
